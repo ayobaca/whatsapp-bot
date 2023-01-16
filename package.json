@@ -1,4 +1,10 @@
 {
+  "name": "whatsapp-bot",
+  "version": "1.0.0",
+  "description": "simple whatsapp bot response",
+  "main": "server.js",
+  "author": "Sona Setiana",
+  "license": "ISC",
   "dependencies": {
     "whatsapp-web.js": "^1.19.2"
   },

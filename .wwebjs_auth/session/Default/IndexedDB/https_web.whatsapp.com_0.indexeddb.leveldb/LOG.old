@@ -1,0 +1,12 @@
+2023/01/16-07:22:51.811 10d0b Reusing MANIFEST /Users/sonasetiana/NodeJsProjects/whatsapp-bot/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2023/01/16-07:22:51.812 10d0b Recovering log #55
+2023/01/16-07:22:51.969 10d0b Reusing old log /Users/sonasetiana/NodeJsProjects/whatsapp-bot/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/000055.log 
+2023/01/16-07:23:04.681 f603 Level-0 table #62: started
+2023/01/16-07:23:04.714 f603 Level-0 table #62: 1189962 bytes OK
+2023/01/16-07:23:04.737 f603 Delete type=0 #55
+2023/01/16-07:23:04.797 f603 Compacting 1@1 + 1@2 files
+2023/01/16-07:23:04.989 f603 Generated table #63@1: 37180 keys, 1871714 bytes
+2023/01/16-07:23:04.989 f603 Compacted 1@1 + 1@2 files => 1871714 bytes
+2023/01/16-07:23:05.005 f603 compacted to: files[ 0 0 1 0 0 0 0 ]
+2023/01/16-07:23:05.006 f603 Delete type=2 #62
+2023/01/16-07:23:05.007 f603 Delete type=2 #59

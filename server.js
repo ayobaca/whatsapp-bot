@@ -7,8 +7,7 @@ const puppeteerOptions = {
 };
 
 const client = new Client({
-    puppeteer: puppeteerOptions,
-    session: sessionLocal
+    puppeteer: puppeteerOptions
 });
 
 client.on('qr', qr => {

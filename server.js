@@ -31,7 +31,7 @@ client.on('message', async msg => {
     let salam = 'وَعَلَيْكُمُ السَّلاَمُ وَرَحْمَةُ اللهِ وَبَرَكَاتُهُ';
     let amin = 'آمِيْن يَا رَبَّ العَالَمِيْنَ';
     let defaultReplay = salam +'\n'+amin;
-    if (msg.from.includes(bangAgusNumber) && msg.body.startsWith(msgStartsWith) && msg.body.endsWith(msgEndWith)) {
+    if (msg.from.includes(myNumber) && msg.body.startsWith(msgStartsWith) && msg.body.endsWith(msgEndWith)) {
         msg.reply(defaultReplay);
     }
     

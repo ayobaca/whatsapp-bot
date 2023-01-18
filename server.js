@@ -36,8 +36,8 @@ client.on('message', async msg => {
         msg.reply(defaultReplay);
     }
     
-    //console.log('From: ', msg.from);
-    //console.log('Body: ', msg.body);
+    console.log('From: ', msg.from);
+    console.log('Body: ', msg.body);
 });
 
 client.initialize();

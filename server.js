@@ -32,7 +32,7 @@ client.on('message', async msg => {
     let salam = 'وَعَلَيْكُمُ السَّلاَمُ وَرَحْمَةُ اللهِ وَبَرَكَاتُهُ';
     let amin = 'آمِيْن يَا رَبَّ العَالَمِيْنَ';
     let defaultReplay = salam +'\n'+amin;
-    let contactNumber = bangAgusNumber;
+    let contactNumber = myNumber;
     
     let chat = await msg.getChat();
     

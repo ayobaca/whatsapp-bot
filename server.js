@@ -32,14 +32,18 @@ client.on('message', async msg => {
     let salam = 'وَعَلَيْكُمُ السَّلاَمُ وَرَحْمَةُ اللهِ وَبَرَكَاتُهُ';
     let amin = 'آمِيْن يَا رَبَّ العَالَمِيْنَ';
     let defaultReplay = salam +'\n'+amin;
+    let contactNumber = bangAgusNumber;
     
     let chat = await msg.getChat();
     
     if (chat.isGroup) {
         let contact = await msg.getContact();
         console.log('contact: ', contact.number);
+        if (contact.number.includes(contactNumber) && msg.body.startsWith(msgStartsWith) && msg.body.endsWith(msgEndWith)) {
+            msg.reply(defaultReplay);
+        }
     } else {
-        if (msg.from.includes(bangAgusNumber) && msg.body.startsWith(msgStartsWith) && msg.body.endsWith(msgEndWith)) {
+        if (msg.from.includes(contactNumber) && msg.body.startsWith(msgStartsWith) && msg.body.endsWith(msgEndWith)) {
             msg.reply(defaultReplay);
         }
     }

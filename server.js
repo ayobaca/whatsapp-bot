@@ -36,8 +36,12 @@ client.on('message', async msg => {
         msg.reply(defaultReplay);
     }
     
+    
     console.log('From: ', msg.from);
     console.log('Body: ', msg.body);
+    
+    let chat = await msg.getChat();
+    console.log('chat: ', chat);
 });
 
 client.initialize();

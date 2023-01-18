@@ -33,9 +33,11 @@ client.on('message', async msg => {
     let amin = 'آمِيْن يَا رَبَّ العَالَمِيْنَ';
     let defaultReplay = salam +'\n'+amin;
     
-    let contact = await msg.getContact();
-    if (contact.isGroup) {
-        
+    let chat = await msg.getChat();
+    
+    if (chat.isGroup) {
+        let contact = await msg.getContact();
+        console.log('contact: ', contact.number);
     } else {
         if (msg.from.includes(bangAgusNumber) && msg.body.startsWith(msgStartsWith) && msg.body.endsWith(msgEndWith)) {
             msg.reply(defaultReplay);
@@ -45,9 +47,6 @@ client.on('message', async msg => {
     
     console.log('From: ', msg.from);
     console.log('Body: ', msg.body);
-    
-
-    console.log('chat: ', contact);
 });
 
 client.initialize();
